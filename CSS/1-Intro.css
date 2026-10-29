@@ -1,0 +1,84 @@
+/* ========================================
+   BASE DA PÁGINA
+   ======================================== */
+html, body {
+    margin: 0;                  /* tira a margem padrão do browser */
+    margin-bottom: 0.02%;       /* margem em baixo (fica por cima do margin: 0) */
+    padding: 0;                 /* tira o espaçamento interno padrão */
+    width: 100%;                /* ocupa a largura toda */
+    height: 100%;               /* ocupa a altura toda */
+    display: grid;              /* organiza o conteúdo em grelha */
+    justify-items: center;      /* centra os itens na horizontal */
+    align-items: center;        /* centra os itens na vertical */
+}
+
+/* ========================================
+   CONTENTOR PRINCIPAL
+   ======================================== */
+#main {
+    position: absolute;         /* posicionado livremente */
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-items: center;
+}
+
+/* ========================================
+   BOTÃO "ENTRAR" (ecrã preto inicial)
+   ======================================== */
+#Permissao_inicial {
+    z-index: 2;                 /* camada de cima, tapa tudo */
+    position: fixed;            /* fixo ao ecrã */
+    width: 100%;
+    height: 100%;
+    background-color: black;    /* ecrã preto */
+    font-size: 3vw;             /* tamanho do texto (3% da largura do ecrã) */
+    color: white;               /* cor do texto */
+}
+
+/* ========================================
+   VÍDEO DE FUNDO
+   ======================================== */
+#fundo_intro {
+    z-index: -1;                /* camada de baixo, atrás de tudo */
+    position: fixed;            /* fixo ao ecrã */
+}
+
+/* ========================================
+   CAMADA DE ESCURECIMENTO
+   ======================================== */
+#transparencia {
+    z-index: 0;
+    background-color: rgba(0, 0, 0, 0.404);  /* preto com ~40% de opacidade */
+    width: 100%;
+    height: 100%;
+}
+
+/* ========================================
+   CAIXA DE APRESENTAÇÃO
+   ======================================== */
+#apresentacao_intro {
+    z-index: 1;                 /* fica por cima da transparência */
+    border: 2px solid white;    /* contorno branco */
+    background-color: black;    /* fundo preto */
+    border-radius: 10%;         /* cantos arredondados */
+    position: absolute;         /* posicionada livremente */
+    width: 45%;                 /* largura (em relação ao pai) */
+    height: 55%;                /* altura (em relação ao pai) */
+    top: 50%;                   /* canto de cima no meio */
+    left: 50%;                  /* canto esquerdo no meio */
+    transform: translate(-50%, -50%);  /* recua metade da própria caixa = centrada */
+}
+
+/* ========================================
+   BOTÃO DE SOM (dentro da caixa)
+   ======================================== */
+#btn_som {
+    position: absolute;         /* posicionado dentro da caixa */
+    top: 83%;                   /* posição vertical */
+    left: 90%;                  /* posição horizontal */
+    width: 50px;
+    height: 50px;
+    background-image: url("../IMAGENS/SomATIVO.jpg");
+    background-size: contain;
+}
