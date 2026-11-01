@@ -79,6 +79,6 @@ html, body {
     left: 90%;                  /* posição horizontal */
     width: 50px;
     height: 50px;
-    background-image: url("../IMAGENS/SomATIVO.jpg");
+    background-image: url("../IMAGENS/Index/SomATIVO.jpg");
     background-size: contain;
 }
