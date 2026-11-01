@@ -1,2 +1,2 @@
 > [!IMPORTANT]
-> | Discord | Site |
+| Discord | Site |
