@@ -13,5 +13,5 @@ Permissao_inicial.onclick = () => {
 
 btn_som.onclick = () => {
     audio_intro.muted = !audio_intro.muted;
-    btn_som.style.backgroundImage = audio_intro.muted ? 'url("IMAGENS/SomDESATIVADO.jpg")' :  'url("IMAGENS/SomATIVO.jpg")';
+    btn_som.style.backgroundImage = audio_intro.muted ? 'url("IMAGENS/Index/SomDESATIVADO.jpg")' :  'url("IMAGENS/Index/SomATIVO.jpg")';
 }
